@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dcdcdc;
+
+}
+.atas {
+    background-color: #333;
+    overflow: hidden;
+    margin-left: 200px; /*ikut margin sidebar 200px*/
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 2;
+}
+#navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #333;
+    overflow: hidden;
+    margin-left: 200px; /*ikut margin sidebar 200px*/
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 2;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#content {
+    padding: 20px;
+    margin-left: 200px;
+}
+
+.content-section {
+    display: none;
+}
+
+.active-content {
+    display: block;
+    
+}
+
+.pinjaman-box {
+    max-width: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+
+}
+
+.pinjaman-box:hover {
+    background-color: #f9f9f9;
+
+}
+
+.pinjaman-box h3 {
+    margin-bottom: 10px;
+}
+
+
+.img-pinjam {
+    float: right;
+    margin-left: 20px;
+}
+
+.img-pinjam img {
+    max-width: 200px;
+}
+
+.clear {
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+table th, table td {
+
+    text-align: left; 
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.alasan {
+    margin-top: 5px;
+    margin-left: +10px;
+
+    overflow: hidden;
+    word-wrap: break-word; 
+}
+
+.kembalikan {
+    float: right;
+    margin-left: 20px;
+    margin-top: -60px;
+}
+
+.tombol {
+    background-color: #52f06c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: +20px;
+}
+
+.tombol:hover {
+    background-color: #0a6108;
+}
+
+.detail {
+    background-color: #3344fd;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: +10px;
+}
+
+.detail:hover {
+    background-color: #0d276b;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        margin  : 0px;    
+        position: sticky;
+        top: 0px;
+        background-color: #333;
+        overflow-x: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        z-index: -1;
+    }
+    
+    #navbar a {
+        width: auto;
+        display: flex;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        z-index: 2;
+    }
+    
+    
+    #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+
+    #content {
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+}

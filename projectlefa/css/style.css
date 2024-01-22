@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcdcdc;
+    margin: 0;
+    margin-left: 200px;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+#content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.tengah {
+    text-align: center;
+    margin-top: 20%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.button-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.button-container .user {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container .user img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.button-container .user:hover {
+    background-color: #2980b9;
+}
+
+.foot {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

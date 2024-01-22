@@ -1,0 +1,144 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dcdcdc;
+    font-family: Arial, sans-serif;
+}
+
+
+#toggleButton {
+    font-size: 24px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#search-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#search-container form {
+    display: flex;
+    align-items: center;
+}
+
+#search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#search-container button:hover {
+    background-color: #0056b3;
+}
+
+#content {
+    margin-left: 200px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+#content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.nomor:first-child{
+    width: 2%;
+}
+
+table {
+    width: 98%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    width: 20%; 
+    padding: 8px; 
+    text-align: center; 
+}
+
+/* th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}*/
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.detail {
+    background-color: #5596d4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.detail:hover {
+    background-color: #24638c;
+}
+
+.ajukan {
+    background-color: #52f06c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ajukan:hover {
+    background-color: #0a6108;
+}
+
+.ajukan[disabled] {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.edit{
+    background-color: #52f06c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit:hover{
+    background-color: #0a6108;
+}
+
+.delete {
+    background-color: rgb(253, 25, 25);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(107, 107, 107);
+    color: black;
+}

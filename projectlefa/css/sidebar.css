@@ -1,0 +1,144 @@
+#sidebar {
+    width: 200px;   
+    height: 100%;
+    background-color: #3498db;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#sidebar img {
+    margin-top: 0px;
+    max-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+
+}
+
+#infoContainer {
+    /* display: flex; */
+    flex-direction: column;
+    
+}
+
+#infoContainer .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px; 
+}
+
+#infoContainer .info img {
+    width: 14px;
+    height: 14px; 
+    margin-right: 10px; 
+}
+
+.info-container {
+    display: none;
+    position: relative;
+    color: #fff;
+    background-color: #80acff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    z-index: 1; 
+}
+
+.info:hover{
+    background-color: #fff;
+}
+
+#sidebar .sekarang {
+    background-color: #76bae4;
+}
+#sidebar .sekarang:hover {
+    background-color: #76bae4;
+}
+
+
+#sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+#sidebar a:hover {
+    background-color: #2980b9;
+}
+
+#logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#logout a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    background-color: #e74c3c; 
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#logout a img {
+    width: 20px;
+    height: auto;
+}
+
+#logout a:hover {
+    background-color: #c0392b; 
+}
+
+#toggleButton {
+    display: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+    #sidebar {
+        display: none;
+    }
+
+    #toggleButton {
+        display: block;
+    }
+
+    #infoContainer {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #3498db;
+        z-index: 100;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #infoContainer a {
+        display: block;
+        padding: 15px;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    #infoContainer a:hover {
+        background-color: #2980b9;
+    }
+}
